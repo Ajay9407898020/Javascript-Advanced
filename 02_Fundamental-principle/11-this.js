@@ -36,6 +36,6 @@ const obj3 = {
     myName: 'Sundar',
     importantPerson: importantPerson
 }
-importantPerson();
-obj2.importantPerson();
-obj3.importantPerson();
+importantPerson();  //You should paste in developer tool, Here it is undefined but in developer tool it Sunder
+obj2.importantPerson();  //Bunny
+obj3.importantPerson(); //Sundar

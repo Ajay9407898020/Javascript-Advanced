@@ -3,7 +3,7 @@ const a = {
         console.log("a", this);
     },
 };
-a.say();
+a.say();  //{ say: Function }
 const b = {
     say() {
         return function () {
@@ -11,7 +11,7 @@ const b = {
         };
     },
 };
-b.say()();
+b.say()();  // Window Object
 const c = {
     say() {
         return () => {
@@ -19,4 +19,4 @@ const c = {
         };
     },
 };
-c.say()();
+c.say()();  //{ say: Function }
